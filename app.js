@@ -4,31 +4,6 @@ const client = new Discord.Client();
 // Config File
 const { prefix, token, statUrl } = require("./config.json");
 
-// client.once("ready", () => {
-//   console.log("Ready");
-// });
-
-// client.on("message", (message) => {
-//   let query = message.content;
-//   if (query.slice(1) === "Global") {
-//     message.channel.send(query.slice(1));
-// fs.readFile("./data/data.json", "utf8", function readFileCallback(
-//   err,
-//   data
-// ) {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     let obj = JSON.parse(data);
-//     message.channel.send(obj.Global);
-//   }
-// });
-// } else {
-//   message.channel.send(query.slice(1));
-
-//   }
-// });
-
 client.once("ready", () => {
   console.log("Ready!");
 });
