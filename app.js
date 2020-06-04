@@ -73,9 +73,9 @@ client.on("message", (message) => {
                 "CountryCode"
               ].toLowerCase()}:\nTotal Cases: ${
                 obj.Countries[i].TotalConfirmed
-              }\nTotal Cases: ${obj.Countries[i].NewConfirmed}\nTotal Cases: ${
+              }\nNew Cases: ${obj.Countries[i].NewConfirmed}\nNew Recovered: ${
                 obj.Countries[i].NewRecovered
-              }\nTotal Cases: ${obj.Countries[i].TotalRecovered}`;
+              }\nTotal Recovered: ${obj.Countries[i].TotalRecovered}`;
               return message.channel.send(msg);
               // return console.log(obj.Countries[i]);
             }
