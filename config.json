@@ -1,5 +1,6 @@
 {
     "prefix": "!",
     "token": "NzE4MjIxMzI5MjIzOTA5NDI4.XtluoA.yAYEu6vTW8MAquczfJVZpAWBY6Q",
-    "statUrl": "https://api.covid19api.com/summary"
+    "statUrl": "https://api.covid19api.com/summary",
+    "faq": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub"
 }
