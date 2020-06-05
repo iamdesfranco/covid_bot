@@ -2,7 +2,9 @@ const fs = require("fs");
 const Discord = require("discord.js");
 const client = new Discord.Client();
 // Config File
-const { prefix, token, statUrl, faqUrl } = require("./config.json");
+const { prefix, token, statUrl } = require("./config.json");
+
+const faqUrl = "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub";
 
 client.once("ready", () => {
   console.log("Ready!");
