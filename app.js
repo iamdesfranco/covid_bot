@@ -4,7 +4,7 @@ const client = new Discord.Client();
 // Config File
 const { prefix, token, statUrl } = require("./config.json");
 
-const faqUrl = "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub";
+let faqUrl = "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub"
 
 client.once("ready", () => {
   console.log("Ready!");
@@ -63,7 +63,7 @@ client.on("message", (message) => {
               let totalDeaths = `_Total Deaths:_ ${obj.Countries[i].TotalDeaths}`;
               let newRecoveries = `_New Recoveries:_ ${obj.Countries[i].NewRecovered}`;
               let totalRecoveries = `_Total Recoveries:_ ${obj.Countries[i].TotalRecovered}`;
-              let faqMsg = `For any FAQ visit: ${faqUrl}`
+              let faqMsg = `For any FAQ visit: ${faqUrl}`;
               let msg = `${statHeading}\n${newConfirmed}\n${totalConfirmed}\n${newDeaths}\n${totalDeaths}\n${newRecoveries}\n${totalRecoveries}\n${faqMsg}`
               return message.channel.send(msg);
               // return console.log(obj.Countries[i]);
