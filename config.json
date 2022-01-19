@@ -1,5 +1,5 @@
 {
-    "prefix": "!",
-    "token": "NzE4MjIxMzI5MjIzOTA5NDI4.Xtp-9Q.4WNkZAJN3lnaQUkE63ntuACjnx8",
-    "statUrl": "https://api.covid19api.com/summary"
+  "prefix": "!",
+  "token": "YOUR_API_KEY",
+  "statUrl": "https://api.covid19api.com/summary"
 }
